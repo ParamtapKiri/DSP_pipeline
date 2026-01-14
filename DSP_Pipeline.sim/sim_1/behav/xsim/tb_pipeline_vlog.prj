@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"../../../../DSP_Pipeline.srcs/sources_1/new/fft_radix.v" \
+"../../../../DSP_Pipeline.srcs/sources_1/new/fir_filter.v" \
+"../../../../DSP_Pipeline.srcs/sources_1/new/iir_filter.v" \
+"../../../../DSP_Pipeline.srcs/sources_1/new/pipeline_top.v" \
+"../../../../DSP_Pipeline.srcs/sim_1/new/tb_pipeline.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
